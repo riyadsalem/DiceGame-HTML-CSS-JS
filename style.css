@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kdam+Thmor+Pro&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  --color_black: black;
+}
+
+body {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-weight: 500;
+  height: 100vh;
+  color: var(--color_black);
+  background-color: var(--color_black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainSection {
+  position: relative;
+  width: 110rem;
+  height: 60rem;
+  background-color: #c57600;
+  box-shadow: 0 5px 25px #382101;
+  border-radius: 25%;
+  overflow: hidden;
+  display: flex;
+}
+
+.person {
+  flex: 50%; /* grow , shrink , basis */
+  padding: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s;
+}
+
+.personName {
+  position: relative;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.personScore {
+  font-size: 6rem;
+  font-weight: 400;
+  color: var(--color_black);
+  margin-top: 10px;
+  margin-bottom: auto;
+}
+
+.personScore:hover {
+  color: #0f0e0e;
+  font-weight: 800;
+}
+
+.ActivePersonNow {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.ActivePersonNow .personName {
+  font-weight: 800;
+}
+.ActivePersonNow .personScore {
+  box-shadow: 0 0px 5px #1a1003;
+  border-radius: 100%;
+  padding: 0px 20px;
+}
+
+.ActivePersonNow .current {
+  opacity: 1;
+}
+
+.current {
+  background-color: var(--color_black);
+  opacity: 0.8;
+  border-radius: 25%;
+  color: #c57600;
+  width: 65%;
+  padding: 2rem 0.5rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.current:hover {
+  box-shadow: 0 5px 15px var(--color_black);
+}
+
+.current-label {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #c57600;
+}
+
+.current-score {
+  font-size: 4rem;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #c57600;
+  background: none;
+  border: 1px solid #684e24;
+  font-family: inherit;
+  font-size: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.5s;
+  background-color: rgba(255, 255, 255, 0.705);
+  padding: 0.5rem 2rem;
+  border-radius: 25%;
+}
+
+.btn:hover {
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.3);
+}
+
+.Total_num_stopGame {
+  top: 1rem;
+  margin: 5px 0px;
+  font-weight: 600;
+}
+.newGame {
+  top: 8rem;
+  font-weight: 600;
+}
+.rollNow {
+  top: 39.3rem;
+  font-weight: 600;
+}
+.goHold {
+  top: 46.1rem;
+  font-weight: 600;
+}
+
+.goDice {
+  position: absolute;
+  left: 50%;
+  top: 20rem;
+  transform: translateX(-50%);
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.goDice:hover {
+  border-radius: 25%;
+}
+
+.WinnerNow {
+  background-color: #00000081;
+}
+
+.WinnerNow .personName {
+  font-weight: 900;
+  color: var(--color_black);
+}
+
+.WinnerNow .personScore {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 10px;
+  background-color: rgb(2, 36, 2);
+  color: var(--color_black);
+}
+
+.hidden {
+  display: none;
+}

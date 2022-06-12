@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <main class="mainSection">
+      <section class="person player0 ActivePersonNow">
+        <h2 class="personName" id="namePersonOne">Player 1</h2>
+        <p class="personScore" id="score0"></p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current0"></p>
+        </div>
+        <!-- End: div -->
+      </section>
+      <!-- End: section -->
+
+      <!-- ::::::::::::::::::::::::::::::::::::: -->
+
+      <section class="person player1">
+        <h2 class="personName" id="namePersonTwo">Player 2</h2>
+        <p class="personScore" id="score1"></p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current1"></p>
+        </div>
+        <!-- End: div -->
+      </section>
+      <!-- End: section -->
+
+      <!-- ::::::::::::::::::::::::::::::::::::: -->
+
+      <div>
+        <img src="" alt="Playing dice" class="goDice" />
+        <input
+          type="number"
+          class="btn Total_num_stopGame"
+          placeholder="Default 10 || Change NUM"
+          title="15 points to win or enter another number"
+        />
+        <button class="btn newGame">New game</button>
+        <button class="btn rollNow">Roll dice 🎲</button>
+        <button class="btn goHold">Hold</button>
+      </div>
+      <!-- End:div -->
+    </main>
+    <!-- End: .mainSection -->
+    <script src="script.js"></script>
+  </body>
+</html>
