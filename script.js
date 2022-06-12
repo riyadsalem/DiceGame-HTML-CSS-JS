@@ -50,7 +50,7 @@ const Roll = () => {
     const dice = Math.trunc(Math.random() * 6) + 1;
 
     data.diceOneTwo.classList.remove('hidden');
-    data.diceOneTwo.src = `dice[${dice}].png`;
+    data.diceOneTwo.src = `Dice___Images/dice[${dice}].png`;
 
     if (dice !== 1) {
       cureentScore += dice;
