@@ -71,7 +71,9 @@ const Hold = () => {
 
     if (
       scores[activePlayer] >=
-      (data.inputTotalNumWin.value === '' ? 10 : data.inputTotalNumWin.value)
+      (data.inputTotalNumWin.value === '' || data.inputTotalNumWin.value < 0
+        ? 10
+        : data.inputTotalNumWin.value)
     ) {
       tag = false;
       document
